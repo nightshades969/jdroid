@@ -10,5 +10,7 @@ VB>net
 React
 Visual C++
 Assembler
+Vstudio DULU
+Pascal
 React
 Vstudio
