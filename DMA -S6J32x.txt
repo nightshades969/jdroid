@@ -1,0 +1,403 @@
+XRefs to 0x0344	DMAi_SAn_MenuSwitchCase6
+
+0081717a	str r0,[r1,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	void reset_TC_Ram354(int param_1)			DAT_008171c0 = 0;
+********************************************************************************************************************************************************************************************
+
+00817cce		str r0,[r1,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	void WFCFG_WCR_SR_LOOP_RDYstat_00817c78(void)	DAT_00817d28 = 0;	
+********************************************************************************************************************************************************************************************
+
+00817dfa		ldr r0,[r2,#0x0]=>DMAi_SAn_MenuSwitchCase6				READ	void WFCFG_MenuSwitch_00817d30(void)		puVar1 = DAT_00818064;
+********************************************************************************************************************************************************************************************
+
+00817eb6	ldr r1,[r0,#0x0]=>DMAi_SAn_MenuSwitchCase6				READ	void WFCFG_1_5_6_Start_DMA_trnsfr_00817e68(void)	puVar5 = (undefined4 *)*DAT_00818064;
+00817ed0	str r0,[r1,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	void WFCFG_1_5_6_Start_DMA_trnsfr_00817e68(void)	puVar5 = (undefined4 *)*DAT_00818064;
+																	*DAT_00818064 = (int)(puVar5 + 1);
+********************************************************************************************************************************************************************************************
+
+00818038	LAB_00818038	ldr r1,[r4,#0x4]=>DMAi_SAn_MenuSwitchCase6		READ	undefined4 FUN_00817fde(void)			puVar1 = DAT_00818070; 0x340
+																	puVar5 = (undefined4 *)puVar1[1]; = datValue 0x344
+																	
+00818042	stmia r4!=>DAT_00000340,{ r0, r3 }=>DMAi_SAn_MenuSwitchCase6	WRITE	undefined4 FUN_00817fde(void)			puVar1[1] = (uint)(puVar5 + 1); 0x344 = datValue 0x344 + 1
+********************************************************************************************************************************************************************************************
+
+00818082	str r0,[r1,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	void WFCFG_2_7_8_STOP_DMA_0081807c(void)		*DAT_008181fc = 0;
+********************************************************************************************************************************************************************************************
+
+008181d8	ldr r0,[r4,#0x4]=>DMAi_SAn_MenuSwitchCase6				READ	void WCFG_7_DMAen0_STOP_DMA_00818186(void)	puVar1 = DAT_00818200; 0x340
+																	*(undefined4 *)*puVar1 = *(undefined4 *)puVar1[1]; 0340[1] = 0x0344
+008181e8	LAB_008181e8	ldr r0,[r4,#0x4]=>DMAi_SAn_MenuSwitchCase6		READ	void WCFG_7_DMAen0_STOP_DMA_00818186(void)	puVar1[10] = puVar1[1];
+008181f0		stmia r4!=>DAT_00000340,{ r0, r5 }=>DMAi_SAn_MenuSwitchCase6	WRITE	void WCFG_7_DMAen0_STOP_DMA_00818186(void)	puVar1[1] = 0;
+********************************************************************************************************************************************************************************************
+
+00818330	str r1,[r3,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	undefined4 wishmod5_1_2_FUN_00818318(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+																	*DMAi_SAn_00818398 = param_2;
+********************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************
+XRefs to 0x0330(iVar6)	wishmod5_1_2_FUN_00818318 (param2) Destination Adr	-->FUN_8175BA (iVar6 + iVar5)		
+
+00816fc4		str r0,[r7,#0xc]=>DAT_00000330						WRITE	undefined4 FUN_00816f38(int param_1,int param_2,int param_3,uint param_4)
+												piVar3 = DAT_00817014; 0x324
+												piVar3[3] = (uint)uVar1; 0x330
+												********uVar1 = *(ushort *)(param_1 + 0x26);
+
+008175ee	ldmia r4!=>DAT_00000324,{ r2, r3, r5, r6 }=>DAT_00000328			READ
+00817636	str r2,[r4,#0xc]=>DAT_00000330						WRITE	undefined8 FUN_008175ba(uint *param_1,undefined4 param_2,uint param_3)
+0081777c		ldr r5,[r4,#0xc]=>DAT_00000330						READ
+00817998	ldr r2,[r7,#0xc]=>DAT_00000330						READ
+008179a2	ldr r1,[r7,#0xc]=>DAT_00000330						READ
+008182b4	stmia param_1!=>DAT_00000328,{ param_2, param_3, param_4 }=>DAT_0000032c	WRITE	undefined4 FUN_00818210(uint *param_1,undefined4 param_2,uint param_3,uint param_4,uint param_5)
+												puVar2 = DAT_0081830c; 0x0324	
+												puVar2[3] = local_1c; 	puVar2[3] =0x330
+												*****************         
+												if (param_5 <= local_1c) {	local_1c = param_5;
+0e00 0000 = 234 881 024	
+8000 0000 = -2 147 483 648
+7FFF FFFF = 2 147 483 647
+
+********************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************************
+XRefs to 0x0328(iVar5)	wishmod5_1_2_FUN_00818318 (param2) Destination Adr	-->FUN_8175BA (iVar6 + iVar5)	
+
+00817284	ldr r1,[r6,#0x4]=>DAT_00000328						READ
+00817290	LAB_00817290	ldr r1,[r6,#0x4]=>DAT_00000328				READ
+00817360	ldmia r6!=>DAT_00000324,{ r2, r3, r4 }=>DAT_00000328			READ
+0081736a	stmia r6!=>DAT_00000324,{ r1, r3, r4 }=>DAT_00000328			WRITE	void WFCFG_ARBCLR_ARBERR_00817268(int param_1,undefined4 param_2)
+008173aa	ldr r1,[r6,#0x4]=>DAT_00000328						READ
+008173b6	LAB_008173b6	ldr r1,[r6,#0x4]=>DAT_00000328				READ
+00817474	ldmia r6!=>DAT_00000324,{ r2, r3, r4 }=>DAT_00000328			READ
+0081747e	stmia r6!=>DAT_00000324,{ r1, r3, r4 }=>DAT_00000328			WRITE	void WFCFG_ARBCLR_ARBERR_2X_0081738e(int param_1,undefined4 param_2)
+008175ee	ldmia r4!=>DAT_00000324,{ r2, r3, r5, r6 }=>DAT_00000328			READ
+008175fa		stmia r4!=>DAT_00000324,{ r2, r3, r5 }=>DAT_00000328			WRITE	undefined8 FUN_008175ba(uint *param_1,undefined4 param_2,uint param_3)
+00817612	ldr r2,[r4,#0x4]=>DAT_00000328						READ
+00817618	str r2,[r4,#0x4]=>DAT_00000328						WRITE	undefined8 FUN_008175ba(uint *param_1,undefined4 param_2,uint param_3)
+00817666	ldr r0,[r4,#0x4]=>DAT_00000328						READ
+00817726	ldr r0,[r4,#0x4]=>DAT_00000328						READ
+0081772c		str r0,[r4,#0x4]=>DAT_00000328						WRITE	void WFCFG_ARBCLR_SECIR_ARBERR_X2_0081763e(int param_1,undefined4 param_2)
+0081772e	LAB_0081772e	ldmia r4!=>DAT_00000324,{ r1, r2, r3 }=>DAT_00000328	READ
+00817738	stmia r4!=>DAT_00000324,{ r3, r5, r6 }=>DAT_00000328			WRITE	void WFCFG_ARBCLR_SECIR_ARBERR_X2_0081763e(int param_1,undefined4 param_2)
+00817996	ldr r1,[r7,#0x4]=>DAT_00000328						READ
+00817be8	stmia r4!=>DAT_00000324,{ r0, r2, r6 }=>DAT_00000328			WRITE	undefined8 FUN_00817b88(uint *param_1,uint param_2,uint param_3,uint param_4)
+008182b4	stmia param_1!=>DAT_00000328,{ param_2, param_3, param_4 }=>DAT_0000032c	WRITE	undefined4 FUN_00818210(uint *param_1,undefined4 param_2,uint param_3,uint param_4,uint param_5)
+008182b4	stmia param_1!=>DAT_00000328,{ param_2, param_3, param_4 }=>DAT_0000032c	WRITE	undefined4 FUN_00818210(uint *param_1,undefined4 param_2,uint param_3,uint param_4,uint param_5)
+
+
+
+
+
+
+DAT_00818068	= > 0x036C
+
+MENU SWITCH case reference 
+
+puVar3 = DAT_00818048 = > 0x0354 + (6x4) = 0x036C	= WCFG_Swtch_SlctCaseValue */
+switch(*(undefined *)(DAT_00818048 + 6)) {
+
+
+00817d34	void WFCFG_MenuSwitch_00817d30(void)			READ 	DAT_00818048 = > 0x0354 + (6x4) = 0x036C
+
+00817e64	void WCFG_SWITCH_CHOICES(undefined param_1)		WRITE	*0x036c_DAT_00818068 = param_1;
+
+										puVar1 = DAT_0081806C = > 0x0350	;
+00817e78	void WFCFG_1_5_6_Start_DMA_trnsfr_00817e68(void)		WRITE	puVar1[0x1c] = 1;	   
+00817e8a	void WFCFG_1_5_6_Start_DMA_trnsfr_00817e68(void)		WRITE	puVar1[0x1c] = 5;
+00817e9a	void WFCFG_1_5_6_Start_DMA_trnsfr_00817e68(void)		WRITE	puVar1[0x1c] = 6;	*DMA chnl 9 Wflash
+
+										puVar1 = 0x036c_DAT_00818068; 
+00817f02		char WFCFG_SR_swtch_00817eda(void)			WRITE	*puVar1 = 3;
+00817f30		char WFCFG_SR_swtch_00817eda(void)			WRITE	*puVar1 = 3;	if ELSE
+00817f68		char WFCFG_SR_swtch_00817eda(void)			WRITE	*puVar1 = 3;	if ELSE
+00817f80		char WFCFG_SR_swtch_00817eda(void)			WRITE	*puVar1 = 5;	if ELSE
+
+00817fa0		char WFCFG_3_5_WE1_ICR_00817f8a(void)			WRITE	*0x036c_DAT_00818068 = 3;
+00817fb6		char WFCFG_3_5_WE1_ICR_00817f8a(void)			WRITE	puVar1 = 0x036c_DAT_00818068; *puVar1 = 5;
+
+										puVar1 = DAT_00818208;0x0354 + (6x4) = 0x036C
+008180a6	void WFCFG_2_7_8_STOP_DMA_0081807c(void)			WRITE	*(undefined *)(puVar1 + 6) = 2;
+008180b6	void WFCFG_2_7_8_STOP_DMA_0081807c(void)			WRITE	*(undefined *)(puVar1 + 6) = 7;
+008180be	void WFCFG_2_7_8_STOP_DMA_0081807c(void)			WRITE	*(undefined *)(puVar1 + 6) = 8;
+
+									puVar1 = DAT_0081820c;0x350 + 0x1C = 0x036C
+008180d6	void WCFG_1_5_Rd_Ers_Sector_sub0E00_008180c6(void)		WRITE	puVar1[0x1c] = 1;
+008180e8	void WCFG_1_5_Rd_Ers_Sector_sub0E00_008180c6(void)		WRITE	puVar1[0x1c] = 5;
+
+										puVar1 = DAT_00818208;0x0354 + (6x4) = 0x036C
+00818182	void RESET_354_22_FUN_00818174(void)			WRITE	*(undefined *)(puVar1 + 6) = 2;
+
+										puVar1 = DAT_00818200;0x0340 + (11x4 =0x2c) = 0x036C
+008181b4	void WCFG_7_DMAen0_STOP_DMA_00818186(void)		WRITE	*(undefined *)(puVar1 + 0xb) = 7;
+
+
+8,192 bytes / Sector 0x2000
+An erase operation is executed with the ERS[7:0] bits in the WFCFG_SEQCM register specifying the
+sector to erase, and the OPC[2:0] bits specifying the erase operation.
+The suspend and resume operations for sector erase are also specified in the OPC[2:0] bits to
+suspend and resume sector erase.
+
+
+The command sequencer can handle one write operation at a time. 
+If another write request is received during execution of the write command sequence, a bus error response is made. 
+While the write command sequence is not being executed, the value of the ST[1:0] bits in the WFCFG_WSR register is "00".
+
+If a hang up is detected when the command sequencer is operating during writing or sector erase,
+the command sequencer automatically performs a reset for the FLASH macro to restore operation.
+Furthermore, the OPC[1:0] bits can also execute the read/reset command.
+
+
+WorkFLASH enables writing by DMA transfer.
+When the DMAEN bit in the WFCFG_WCR register is "1", 
+a DMA transfer request is generated each time that the write command sequencer becomes idle (the ST[1:0] bit of the WFCFG_WSR register is "00").
+
+The command sequencer can use DMA transfer in block mode. 
+However, for DMA transfer of data to the command sequencer, use block mode DMA transfer with a block size of 64 bits / 8 bytes
+
+
+
+DMA
+DMA Client Matrix, routing 	'M' DMA clients to =>   	 'N' DMA channels
+Number of Channels 	Peripheral 	Functions Remark
+0 to 8 			Reserved 	-	
+9 			Work FLASH 	*1
+10			Ext IRQ 0 	*1
+
+*1: Necessary to enable DMA.
+*2: Only Multi Function Serial function. The interrupt flag which the factor of DMA transfer request is
+cleared when data transfer is started.
+
+Note:
+− DMA doesn’t support the output modules of the sound system; Audio-DAC, PCM-PWM, and I2S0.
+
+This product supports 381 DMA clients.
+− 'm' represents client number. m = 8, 9, …, 380
+− 'M' represents number of client I/F. M = 381
+
+
+
+
+
+
+DMAC is enabled by setting DMA Enable (DMAi_R:DE) to"1". 
+If DMA Enable is set to "1" the individual DMA Channel Enable (DMAi_An:EB) settings become effective.
+
+*********************************************************************************************************
+Configure DMAi_R, Aa-Da, SAa, DAa
+(Do not set DMAi_Aa:EB bit to 1 at this time.)
+
+DMA Controller Global Configuration Register 					(DMAi_R)
+DMA Controller Channel Configuration A Register Channel 'n'			(DMAi_An)
+DMA Controller Channel Configuration B Register Channel 'n'			(DMAi_Bn)
+DMA Controller Channel Configuration C Register Channel 'n'			(DMAi_Cn)
+DMA Controller Channel Configuration D Register Channel 'n'			(DMAi_Dn)	*DMAi_Da register has to be accessed in byte access.
+DMA Controller Channel Configuration Source Address Register Channel 'n' 		(DMAi_SAn)
+DMA Controller Channel Configuration Destination Address Register Channel 'n' 	(DMAi_DAn)
+
+'i' represents instance number of DMAC. i = 0
+'n' represents channel number. n = 0, 1, 2, …,15.
+a : DMA channel numbers to be used.
+b : DMA client numbers to be used
+
+DMA Controller Global Configuration Register 				(DMAi_R)
+This register handles the enabling and halting of the entire DMA Controller, arbitration scheme of the DMA channel arbiter 
+can be chosen, enabling of debug function, and the DMACs behavior in case of a 'debug event' can be selected.
+
+
+DMA Controller Channel Configuration A Register Channel 'n'		(DMAi_An)
+The register specifies whether to enable or halt a DMA channel. It specifies the source of a DMA transfer request 
+and DMA transfer parameters Block Count, Transfer Count, Beat Limit, Alternate, and Timeout.
+
+DMA Controller Channel Configuration B Register Channel 'n'		(DMAi_Bn)
+This register contains Error and Completion Interrupt Flags, and Interrupt Mask bits. Stop status of DMA operation is available in this register. 
+Operation mode selection, transfer width, source, and destination protection information are located here. 
+Software trigger ready flag shows readiness of DMA channel to receive a Software Trigger. 
+Priority Number for DMA channel arbiter can be set here for fixed and dynamic priority arbitration scheme.
+
+DMA Controller Channel Configuration C Register Channel 'n'		(DMAi_Cn)
+The DMA Controller Channel Configuration C Register is used to clear the Interrupt Flags set in the DMAi_Bn register. 
+By writing a "1" to a bit in this register, the software can clear the corresponding flag in the DMAi_Bn register.
+
+DMA Controller Channel Configuration D Register Channel 'n'		(DMAi_Dn)
+This register controls the DMA channels addressing behavior for a DMA transfer. 
+Addressing can be independently chosen for source and destination.
+
+DMA Controller Channel Configuration Source Address Register Channel 'n'	(DMAi_SAn)
+
+DMA Controller Channel Configuration Destination Address Register Channel 'n' (DMAi_DAn)
+
+***************************************************************************************************************
+
+
+
+
+
+DMAi_R	
+b31	b30	b29	b28	b27	b26	b25	b24	....	b0	
+DE 	DSHR 	DBE 	PR[1] 	PR[0] 	DH 	DB[1] 	DB[0]		DSHS
+
+[bit31] DE : DMA enable(DE)				0 DMAC globally disabled	1 DMAC globally enabled
+[bit30] DSHR : DMA stop/halt request flag		0 Indicates that global halt/disable condition of DMAC is removed	1 Indicates that DMA transfers of all channels are requested to halt or disable
+[bit29] DBE : Debug enable				0 DMAC does not react on debug events	1 DMAC reacts on debug events. Reaction depends on setting of Debug Behavior (DMAi_R:DB)
+[bit28:27] PR[1:0] : Priority type			00 Fixed priority	01 Dynamic priority		10 Round robin	11 Reserved
+[bit26] DH : DMA halt				"1", all DMA channels are halted and do not perform DMA transfers until this bit is set back to "0"
+[bit25:24] DB[1:0] : Debug behavior			00 DMAC continues on debug event	01 DMAC halts all transfers on debug event	10 DMAC stops all transfers on debug event	11 Reserved
+[bit0] DSHS : DMA stop/halt status flag		0 Indicate that DMA transfer of at least one channel is running	1 Indicate that DMA transfers of all channels are halted or disabled
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bad1abe1 = from ghidra decompiler
+bad1abe1	0x0334
+
+00816ece		ldrb r0,[r4,#0x10]=>DAT_00000334			READ
+00816eda	strb r0,[r4,#0x10]=>DAT_00000334			WRITE		8
+00816fd2		strb r0,[r7,#0x10]=>DAT_00000334			WRITE		0x12
+0081712a	strb r2,[r0,#0x10]=>DAT_00000334			WRITE		8
+008171da	strb r1,[r0,#0x10]=>DAT_00000334			WRITE		8
+00817254	ldrb param_1,[param_2,#0x10]=>DAT_00000334	READ		if 0x313 ='\x01' && 0x334 = '\x04' or 	0x334 = '\x01'  then *param_4 = *param_4 + 0x200000;
+008175b6	strb r0,[r7,#0x10]=>DAT_00000334			WRITE		0x15
+00817608	strb r0,[r4,#0x10]=>DAT_00000334			WRITE		6
+00817792	strb r0,[r4,#0x10]=>DAT_00000334			WRITE		3
+
+0081792e	LAB_0081792e	ldrb r4,[r7,#0x10]=>DAT_00000334	READ		if 0x334 !='\x05' && 0x334 != '\x02'  then WCFG_UP1(param_1);
+0081794e	ldrb r0,[r7,#0x10]=>DAT_00000334			READ
+00817956	strb r0,[r7,#0x10]=>DAT_00000334			WRITE		0x15
+00817958	LAB_00817958	ldrb r4,[r7,#0x10]=>DAT_00000334	READ
+00817966	ldrb r4,[r7,#0x10]=>DAT_00000334			READ
+0081796e	strb r4,[r7,#0x10]=>DAT_00000334			WRITE
+00817976	ldrb r4,[r7,#0x10]=>DAT_00000334			READ
+008179c8		ldrb r0,[r7,#0x10]=>DAT_00000334			READ
+008179e0	ldrb r0,[r7,#0x10]=>DAT_00000334			READ
+
+00817bf4		strb r0,[r4,#0x4]=>DAT_00000334			WRITE		0x14
+008182c2		strb param_1,[r6,#0x10]=>DAT_00000334		WRITE		0x17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
