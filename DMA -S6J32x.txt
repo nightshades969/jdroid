@@ -1,3 +1,6 @@
+edit this dma s6jj after feature branch deleted
+but on local still have feature branch... then try push to remote
+ 
 XRefs to 0x0344	DMAi_SAn_MenuSwitchCase6
 
 0081717a	str r0,[r1,#0x0]=>DMAi_SAn_MenuSwitchCase6				WRITE	void reset_TC_Ram354(int param_1)			DAT_008171c0 = 0;
